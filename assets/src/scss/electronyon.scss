@@ -1,0 +1,36 @@
+body {
+  font-family: $typeface;
+  background-image: url('../../dist/images/bg.jpg');
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: $h1-fontsize;
+}
+
+h2 {
+  font-size: $h2-fontsize;
+  color: $color-violet;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.carousel {
+  max-height: 350px;
+  overflow: hidden;
+  margin-bottom: $margin-main;
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.btn-custom {
+  width: 100%;
+  border-radius: 0;
+  background-color: $color-mauve;
+}

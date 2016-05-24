@@ -1,0 +1,33 @@
+.panel {
+  padding: 0 $margin-main;
+  border-radius: 0;
+  border: none;
+
+  .panel-heading {
+    padding: 0;
+    background-color: #fff;
+    border: none;
+
+    h2 {
+      padding: 20px 0 15px 0;
+    }
+  }
+
+  .panel-body {
+    padding: 0;
+  }
+
+  .panel-footer {
+    min-height: 34px + 27px;
+    padding: 0;
+    background-color: #fff;
+    border: none;
+  }
+
+  .btn-content {
+    padding: 6px 20px;
+    border-radius: 0;
+    background-color: $color-violet;
+    color: #fff;
+  }
+}
