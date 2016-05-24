@@ -12,10 +12,43 @@ nav {
   transition: left 1s ease;
 }
 
-.nav-is-displayed {
-  left: 0;
+#nav-bar {
+
+  .fa {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 7px;
+  }
 }
 
-.nav-is-hidden {
-  left: -200px;
+#nav-trigger {
+  color: #fff;
+  margin: 0 7px 0 16px;
+  font-size: 25px;
+  font-weight: 200;
+
+  span {
+    line-height: 50px;
+    font-size: 25px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+
+  &:after {
+    content: "|";
+  }
 }
