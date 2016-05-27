@@ -27,3 +27,8 @@ Launch BrowserSync / Local dev server
     gulp serve
 
 Enjoy !
+
+For references
+
+- [BrowserSync](https://www.browsersync.io/)
+- [Gulp](http://gulpjs.com/)
