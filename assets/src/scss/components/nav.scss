@@ -6,10 +6,61 @@ nav {
 }
 
 #nav-container {
+  z-index: 9999;
   position: fixed;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
   transition: left 1s ease;
+
+  #nav-close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: #fff;
+    font-size: 25px;
+
+    &:hover {
+      color: $color-violet;
+    }
+  }
+
+  #nav-list {
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    list-style-type: none;
+    text-align: right;
+
+    a {
+      display: block;
+      margin: 10px 0;
+      color: #fff;
+
+      &:hover {
+        color: $color-violet;
+        text-decoration: none;
+      }
+
+      &:visited, &:link, &:active {
+        text-decoration: none;
+      }
+    }
+
+    li {
+      font-size: 25px;
+
+      .sub-menu-closed {
+        display: none;
+      }
+
+      ul {
+        border-top: 2px solid $color-violet;
+        border-bottom: 2px solid $color-violet;
+        list-style-type: none;
+      }
+
+    }
+  }
 }
 
 #nav-bar {
@@ -32,19 +83,7 @@ nav {
     font-size: 25px;
   }
 
-  &:hover {
-    text-decoration: none;
-  }
-
-  &:visited {
-    text-decoration: none;
-  }
-
-  &:link {
-    text-decoration: none;
-  }
-
-  &:active {
+  &:hover, &:visited, &:link, &:active {
     text-decoration: none;
   }
 

@@ -43,6 +43,16 @@
 
 #sidebar-program-block {
   background-color: $color-grey-light;
+
+  &:hover {
+    background-color: $color-dark;
+  }
+
+  a {
+    &:hover, &:visited, &:active {
+      text-decoration: none;
+    }
+  }
 }
 
 #sidebar-copyright-block {
