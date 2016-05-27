@@ -13,15 +13,36 @@
 <body>
 
     <div id="nav-container" class="nav-is-hidden">
-
+        <div id="nav-close"><i class="fa fa-times"></i></div>
+        <ul id="nav-list">
+            <li><a href="#">Programme</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Billetterie</a></li>
+            <li id="sub-trigger-1"><a href="#">
+                Festival</a>
+                <ul class="sub-menu-closed">
+                    <li><a href="#">Description</a></li>
+                    <li><a href="#">Fondateurs</a></li>
+                    <li><a href="#">Artistes</a></li>
+                </ul>
+            </li>
+            <li id="sub-trigger-2"><a href="#">
+                Infos pratiques</a>
+                <ul class="sub-menu-closed">
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">formulaire de contact</a></li>
+                    <li><a href="#">Plan d'accès</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <div class="container logo">
         <div class="col-lg-6">
-            <img src="assets/src/images/logo.png">
+            <a href="#"><img src="assets/src/images/logo.png"></a>
         </div>
-        <div class="col-lg-6">
-            <img id="image-reservation" src="assets/src/images/reservation.png">
+        <div class="col-lg-6 hidden-sm hidden-xs">
+            <a href="#"><img id="image-reservation" src="assets/src/images/reservation.png"></a>
         </div>
     </div>
 
@@ -100,6 +121,9 @@
                 </div>
             </div>
 
+            <div class="panel panel-image-header">
+                <img src="assets/dist/images/slider1.jpg">
+            </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h2>Titre</h2>
@@ -116,6 +140,9 @@
                 </div>
             </div>
 
+            <div class="panel panel-image-header">
+                <img src="assets/dist/images/slider1.jpg">
+            </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h2>Titre</h2>
@@ -132,6 +159,9 @@
                 </div>
             </div>
 
+            <div class="panel panel-image-header">
+                <img src="assets/dist/images/slider1.jpg">
+            </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h2>Titre</h2>
@@ -147,6 +177,8 @@
                     <button class="btn btn-content pull-right" type="button">Lire plus</button>
                 </div>
             </div>
+
+            <button type="button" class="btn btn-more">En voir plus</button>
 
         </div>
         <div class="col-lg-4" id="sidebar">
@@ -163,8 +195,10 @@
             </div>
 
             <div id="sidebar-program-block" class="sidebar-block">
-                <h2>Programmation</h2>
-                <img src="assets/src/images/program.png">
+                <a href="#">
+                    <h2>Programmation</h2>
+                    <img src="assets/src/images/program.png">
+                </a>
             </div>
 
             <div id="sidebar-newsletter-block" class="sidebar-block">

@@ -29,8 +29,23 @@ h2 {
   }
 }
 
+.btn {
+
+  &:hover {
+    background-color: $color-dark;
+    color: #fff;
+  }
+}
+
 .btn-custom {
   width: 100%;
   border-radius: 0;
   background-color: $color-mauve;
+}
+.btn-more {
+  background-color: $color-violet;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 50px;
 }
